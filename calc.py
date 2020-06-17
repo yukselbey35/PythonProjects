@@ -4,6 +4,7 @@ def yaz(x):
     s = len(giris.get())
     giris.insert(s,str(x))
     #print(x)
+    #comments
 
 hesap = 5
 s1 = 0
