@@ -1,0 +1,30 @@
+/*This our first A-Frame VR program. In this program we’ll create a sphere. Try changing some of the attributes to see what happens.*/
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interaction</title>
+      <script src="https://aframe.io/releases/0.3.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+        <!-- Use the cursor to position it over the box and click -->
+
+        <a-sphere position="-1 0 -4" radius="0.5" color="#803d8c">
+            <a-animation
+                attribute="scale"
+                from="1 1 1"
+                to="4 4 4"
+                dur="2000"
+                begin="click"
+                easing="ease-out"
+                fill="none">
+            </a-animation>
+        </a-sphere>
+        <a-camera>
+            <!-- Try changing the fuse to true and see what happens -->
+            <a-cursor fuse="false" fuse-timeout="1500"></a-cursor>
+        </a-camera>
+        <a-sky color="#AAB"></a-sky>
+    </a-scene>
+  </body>
+</html>
