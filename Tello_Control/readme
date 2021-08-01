@@ -1,0 +1,23 @@
+#Add library from setting
+#Import these
+
+from djitellopy import tello
+#we want to add some delays between each command
+from time import sleep
+
+to create object myDrone=tello.Tello()
+to connect= myDrone.connect()
+
+
+
+def movefourdirection():
+    me.move_forward(30)
+    sleep(2)
+    me.move_back(30)
+    sleep(2)
+    me.send_rc_control(50,0,0,0)
+    sleep(2)
+    me.send_rc_control(-50,0,0,0)
+    sleep(2)
+    me.send_rc_control(0,0,0,0)
+movefourdirection()
