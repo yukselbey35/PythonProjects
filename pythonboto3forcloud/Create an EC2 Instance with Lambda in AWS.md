@@ -1,5 +1,5 @@
 # Create an EC2 Instance with Lambda in AWS
-- 1) We need to Create EC2 Key Pair to use with Lambda functioan and to do SSh the EC2
+- 1) We need to Create EC2 Key Pair to use with Lambda function and to do SSh the EC2
 
 - 2) We will use IAM role for the Lambda execution policy 
 ```
